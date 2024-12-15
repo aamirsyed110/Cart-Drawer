@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart_drawer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="overlay"></div>
+    <button id="cartToggleBtn">Open Cart</button>
+   <div class="cart_drawer" id="cart_drawer">
+    <div class="cart_drawer_section">
+
+   
+        <div class="cart_drawer_header">
+            <div class="col-1">
+                <h3 class="cart_drawerH">Your Bag</h3>
+            </div>
+            <div class="col-1">
+                <span class="cartCount"></span>
+                <span class="cartCountSep">|</span>
+                <span class="cartsPrice"></span>
+                <button id="closeCartDrawer"><img src="img/Vector.png"></button>
+            </div>
+        </div>
+        <div class="cartData">
+            <div class="shippingCart">
+                <div class="flex">
+                    <div class="col2 firstShip">
+                        <div class="shippingCount">1</div>
+                        <div class="shippingDescription">Free Shipping Above Rs 5000</div>
+                    </div>
+                    <div class="col3 secondShip">
+                        <div class="shippingCount shipingYes">2</div>
+                        <div class="shippingDescription">10% Discount Above Rs 20000</div>
+                    </div>
+                    <div class="col2">
+                        <div class="shippingCount">3</div>
+                        <div class="shippingDescription">20% Discount Above Rs 40000</div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="cartItems" id="cartItems">
+               
+                <!-- dynamic cart data loads here -->
+                
+            </div>
+        </div>
+        <div class="coupons_cart">
+            <input type="text" placeholder="Apply your Coupons">
+            <button class="applaybtn">APPLY</button>
+        </div>
+        <div class="itemsLike">
+            <h3 class="itemsLikeHeding">You Might Also Like</h3>
+            <div class="itemsLikelists" id="itemsLikelists">
+                
+                <!-- dynamic related data loads here -->
+
+            </div>
+        </div>
+        <div class="giftOrder">
+            <div class="col-1 giftOrderheading">Gifting this Order</div>
+            <div class="col-1 addgift"><input type="checkbox" name="addgift"><label for="addgift">Add a gift note</label></div>
+        </div>
+    </div>
+        <div class="totalSection">
+            <div>
+                <div class="discount flex">
+                    <div class="col-1">Discount on MRP</div>
+                    <div class="col-1 right discPrice">Rs 0.00 /-</div>
+                </div>
+                <div class="total flex">
+                    <div class="col-1">Total</div>
+                    <div class="col-1 right totalPrice">Rs 0.00 /-</div>
+                </div>
+                <button class="checkoutbtn">Checkout</button>
+            </div>
+           
+        </div>
+    
+   </div> 
+
+    <script src="cart_drawer.js"></script>
+</body>
+</html>
